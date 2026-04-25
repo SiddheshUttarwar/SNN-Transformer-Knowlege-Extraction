@@ -8,6 +8,7 @@ from datasets import load_dataset
 from torchvision import transforms
 from collections import defaultdict
 from tqdm import tqdm
+from spikingjelly.clock_driven import functional
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "imagenet"))
 warnings.filterwarnings("ignore")
@@ -155,6 +156,7 @@ def main():
                 head_activities[i].append(b_act)
 
             extracted_spikes.clear()
+            functional.reset_net(model)
 
     for h in handles: h.remove()
 
