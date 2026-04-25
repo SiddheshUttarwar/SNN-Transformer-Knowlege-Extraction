@@ -1,0 +1,72 @@
+{
+    "Sample_01": {
+        "global_entropy": 5.759329512005761,
+        "dopamine_phase": "PHASIC_LOCK",
+        "baseline_spike_operations": 60105.0,
+        "actuated_spike_operations": 14688.0,
+        "dynamic_power_shift_pct": -75.5627651609683
+    },
+    "Sample_02": {
+        "global_entropy": 5.63800699370248,
+        "dopamine_phase": "PHASIC_LOCK",
+        "baseline_spike_operations": 61527.0,
+        "actuated_spike_operations": 17814.0,
+        "dynamic_power_shift_pct": -71.04685747720512
+    },
+    "Sample_03": {
+        "global_entropy": 6.0997239748636884,
+        "dopamine_phase": "PHASIC_LOCK",
+        "baseline_spike_operations": 68389.0,
+        "actuated_spike_operations": 20960.0,
+        "dynamic_power_shift_pct": -69.35179634151692
+    },
+    "Sample_04": {
+        "global_entropy": 5.590357757750012,
+        "dopamine_phase": "PHASIC_LOCK",
+        "baseline_spike_operations": 62976.0,
+        "actuated_spike_operations": 18566.0,
+        "dynamic_power_shift_pct": -70.51892784552845
+    },
+    "Sample_05": {
+        "global_entropy": 6.00183976264227,
+        "dopamine_phase": "PHASIC_LOCK",
+        "baseline_spike_operations": 67047.0,
+        "actuated_spike_operations": 19325.0,
+        "dynamic_power_shift_pct": -71.17693558250183
+    },
+    "Sample_06": {
+        "global_entropy": 6.018915959766933,
+        "dopamine_phase": "PHASIC_LOCK",
+        "baseline_spike_operations": 68093.0,
+        "actuated_spike_operations": 21632.0,
+        "dynamic_power_shift_pct": -68.23168313923604
+    },
+    "Sample_07": {
+        "global_entropy": 5.757349457059588,
+        "dopamine_phase": "PHASIC_LOCK",
+        "baseline_spike_operations": 63362.0,
+        "actuated_spike_operations": 20894.0,
+        "dynamic_power_shift_pct": -67.02439948233958
+    },
+    "Sample_08": {
+        "global_entropy": 6.2240100758416315,
+        "dopamine_phase": "TONIC_SEARCH",
+        "baseline_spike_operations": 68773.0,
+        "actuated_spike_operations": 90465.0,
+        "dynamic_power_shift_pct": 31.541447951957892
+    },
+    "Sample_09": {
+        "global_entropy": 6.060181952658153,
+        "dopamine_phase": "PHASIC_LOCK",
+        "baseline_spike_operations": 70350.0,
+        "actuated_spike_operations": 19750.0,
+        "dynamic_power_shift_pct": -71.92608386638237
+    },
+    "Sample_10": {
+        "global_entropy": 5.834489742914836,
+        "dopamine_phase": "PHASIC_LOCK",
+        "baseline_spike_operations": 62336.0,
+        "actuated_spike_operations": 20593.0,
+        "dynamic_power_shift_pct": -66.96451488706366
+    }
+}

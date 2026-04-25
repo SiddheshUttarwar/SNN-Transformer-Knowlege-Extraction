@@ -1,0 +1,28 @@
+come up with list of different head categories
+
+how each type impacts the model performance
+
+importance of each head consistently across different images , what type is doing what
+
+real time inference and determine some online purning strategy
+
+importance of head on model performance ?
+
+how can we relate the gating type or head type with the sparcity?
+
+purning for each head  and head type
+
+sparcity for either Q or K or V at each time and then use it as a proxy
+
+credit assignment problem ? black box -- 
+
+weak Q's of V's we can purne that heads
+
+try to identify the weak heads and prune them and type to adapt my model based on the purning strategy
+
+fine tune to estimate the strategy for purning and this has to be in loop
+
+design purning strategy - then design the model based on the strategy and not affect the accuracy
+
+fine tune it -> does the pattern still drop the accuracy -> if not what ? if yes what ?
+

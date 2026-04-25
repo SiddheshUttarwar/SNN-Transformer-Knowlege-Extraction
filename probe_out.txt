@@ -1,0 +1,16 @@
+Stage block counts: {'stage2': 2, 'stage3': 7, 'stage1': 1}
+Head shape: torch.Size([1000, 384])
+
+All top-level keys (first part):
+  head
+  patch_embed1
+  patch_embed2
+  patch_embed3
+  stage1
+  stage2
+  stage3
+
+Architecture params from ckpt dict (non state_dict keys):
+  epoch: 195
+  arch: maxformer_10_384
+  metric: 77.824

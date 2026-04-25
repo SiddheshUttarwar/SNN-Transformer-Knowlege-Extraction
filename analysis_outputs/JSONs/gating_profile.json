@@ -1,0 +1,352 @@
+{
+    "block_0": {
+        "head_0": {
+            "engram_mean_Wq": 0.03656165301799774,
+            "sparsity_rate": 0.6222,
+            "stdp_timing_gap_abs": 1.236,
+            "q_first_spike_time": 2.702,
+            "max_Pearson_sync_with_another_head": NaN,
+            "HARDWARE_GATING_POLICY": "ACTIVE_NO_GATE"
+        },
+        "head_1": {
+            "engram_mean_Wq": 0.03656165301799774,
+            "sparsity_rate": 0.9089,
+            "stdp_timing_gap_abs": 0.219,
+            "q_first_spike_time": 3.688,
+            "max_Pearson_sync_with_another_head": NaN,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_2": {
+            "engram_mean_Wq": 0.03656165301799774,
+            "sparsity_rate": 0.7938,
+            "stdp_timing_gap_abs": 0.583,
+            "q_first_spike_time": 3.283,
+            "max_Pearson_sync_with_another_head": NaN,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_3": {
+            "engram_mean_Wq": 0.03656165301799774,
+            "sparsity_rate": 0.9584,
+            "stdp_timing_gap_abs": 0.151,
+            "q_first_spike_time": 3.849,
+            "max_Pearson_sync_with_another_head": NaN,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_4": {
+            "engram_mean_Wq": 0.03656165301799774,
+            "sparsity_rate": 0.9716,
+            "stdp_timing_gap_abs": 0.031,
+            "q_first_spike_time": 3.845,
+            "max_Pearson_sync_with_another_head": NaN,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_5": {
+            "engram_mean_Wq": 0.03656165301799774,
+            "sparsity_rate": 0.8442,
+            "stdp_timing_gap_abs": 0.482,
+            "q_first_spike_time": 3.487,
+            "max_Pearson_sync_with_another_head": NaN,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        }
+    },
+    "block_1": {
+        "head_0": {
+            "engram_mean_Wq": 0.03609876707196236,
+            "sparsity_rate": 0.8834,
+            "stdp_timing_gap_abs": 0.319,
+            "q_first_spike_time": 3.456,
+            "max_Pearson_sync_with_another_head": 0.291,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_1": {
+            "engram_mean_Wq": 0.03609876707196236,
+            "sparsity_rate": 0.852,
+            "stdp_timing_gap_abs": 0.736,
+            "q_first_spike_time": 3.254,
+            "max_Pearson_sync_with_another_head": 0.234,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_2": {
+            "engram_mean_Wq": 0.03609876707196236,
+            "sparsity_rate": 0.9919,
+            "stdp_timing_gap_abs": 0.011,
+            "q_first_spike_time": 3.952,
+            "max_Pearson_sync_with_another_head": 0.19,
+            "HARDWARE_GATING_POLICY": "STATICALLY_PRUNE_OR_EARLY_EXIT_T1"
+        },
+        "head_3": {
+            "engram_mean_Wq": 0.03609876707196236,
+            "sparsity_rate": 0.7701,
+            "stdp_timing_gap_abs": 0.915,
+            "q_first_spike_time": 2.98,
+            "max_Pearson_sync_with_another_head": 0.234,
+            "HARDWARE_GATING_POLICY": "ACTIVE_NO_GATE"
+        },
+        "head_4": {
+            "engram_mean_Wq": 0.03609876707196236,
+            "sparsity_rate": 0.9581,
+            "stdp_timing_gap_abs": 0.171,
+            "q_first_spike_time": 3.81,
+            "max_Pearson_sync_with_another_head": 0.214,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_5": {
+            "engram_mean_Wq": 0.03609876707196236,
+            "sparsity_rate": 0.9741,
+            "stdp_timing_gap_abs": 0.1,
+            "q_first_spike_time": 3.848,
+            "max_Pearson_sync_with_another_head": 0.291,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        }
+    },
+    "block_2": {
+        "head_0": {
+            "engram_mean_Wq": 0.03605634719133377,
+            "sparsity_rate": 0.8879,
+            "stdp_timing_gap_abs": 0.423,
+            "q_first_spike_time": 3.472,
+            "max_Pearson_sync_with_another_head": NaN,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_1": {
+            "engram_mean_Wq": 0.03605634719133377,
+            "sparsity_rate": 0.6632,
+            "stdp_timing_gap_abs": 1.212,
+            "q_first_spike_time": 2.464,
+            "max_Pearson_sync_with_another_head": NaN,
+            "HARDWARE_GATING_POLICY": "ACTIVE_NO_GATE"
+        },
+        "head_2": {
+            "engram_mean_Wq": 0.03605634719133377,
+            "sparsity_rate": 0.8028,
+            "stdp_timing_gap_abs": 0.543,
+            "q_first_spike_time": 3.206,
+            "max_Pearson_sync_with_another_head": NaN,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_3": {
+            "engram_mean_Wq": 0.03605634719133377,
+            "sparsity_rate": 0.9391,
+            "stdp_timing_gap_abs": 0.108,
+            "q_first_spike_time": 3.732,
+            "max_Pearson_sync_with_another_head": NaN,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_4": {
+            "engram_mean_Wq": 0.03605634719133377,
+            "sparsity_rate": 0.8879,
+            "stdp_timing_gap_abs": 0.27,
+            "q_first_spike_time": 3.502,
+            "max_Pearson_sync_with_another_head": NaN,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_5": {
+            "engram_mean_Wq": 0.03605634719133377,
+            "sparsity_rate": 0.8097,
+            "stdp_timing_gap_abs": 0.422,
+            "q_first_spike_time": 3.054,
+            "max_Pearson_sync_with_another_head": NaN,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        }
+    },
+    "block_3": {
+        "head_0": {
+            "engram_mean_Wq": 0.036899276077747345,
+            "sparsity_rate": 0.8467,
+            "stdp_timing_gap_abs": 0.441,
+            "q_first_spike_time": 3.255,
+            "max_Pearson_sync_with_another_head": 0.513,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_1": {
+            "engram_mean_Wq": 0.036899276077747345,
+            "sparsity_rate": 0.9088,
+            "stdp_timing_gap_abs": 0.375,
+            "q_first_spike_time": 3.501,
+            "max_Pearson_sync_with_another_head": 0.584,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_2": {
+            "engram_mean_Wq": 0.036899276077747345,
+            "sparsity_rate": 0.8587,
+            "stdp_timing_gap_abs": 0.481,
+            "q_first_spike_time": 3.321,
+            "max_Pearson_sync_with_another_head": 0.123,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_3": {
+            "engram_mean_Wq": 0.036899276077747345,
+            "sparsity_rate": 0.844,
+            "stdp_timing_gap_abs": 0.31,
+            "q_first_spike_time": 3.211,
+            "max_Pearson_sync_with_another_head": 0.584,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_4": {
+            "engram_mean_Wq": 0.036899276077747345,
+            "sparsity_rate": 0.8684,
+            "stdp_timing_gap_abs": 0.534,
+            "q_first_spike_time": 3.323,
+            "max_Pearson_sync_with_another_head": 0.217,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_5": {
+            "engram_mean_Wq": 0.036899276077747345,
+            "sparsity_rate": 0.8145,
+            "stdp_timing_gap_abs": 0.683,
+            "q_first_spike_time": 3.118,
+            "max_Pearson_sync_with_another_head": 0.513,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        }
+    },
+    "block_4": {
+        "head_0": {
+            "engram_mean_Wq": 0.03735179454088211,
+            "sparsity_rate": 0.8049,
+            "stdp_timing_gap_abs": 0.751,
+            "q_first_spike_time": 3.021,
+            "max_Pearson_sync_with_another_head": 0.333,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_1": {
+            "engram_mean_Wq": 0.03735179454088211,
+            "sparsity_rate": 0.9135,
+            "stdp_timing_gap_abs": 0.399,
+            "q_first_spike_time": 3.568,
+            "max_Pearson_sync_with_another_head": 0.333,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_2": {
+            "engram_mean_Wq": 0.03735179454088211,
+            "sparsity_rate": 0.8929,
+            "stdp_timing_gap_abs": 0.322,
+            "q_first_spike_time": 3.465,
+            "max_Pearson_sync_with_another_head": 0.301,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_3": {
+            "engram_mean_Wq": 0.03735179454088211,
+            "sparsity_rate": 0.7578,
+            "stdp_timing_gap_abs": 1.021,
+            "q_first_spike_time": 2.869,
+            "max_Pearson_sync_with_another_head": 0.204,
+            "HARDWARE_GATING_POLICY": "ACTIVE_NO_GATE"
+        },
+        "head_4": {
+            "engram_mean_Wq": 0.03735179454088211,
+            "sparsity_rate": 0.8176,
+            "stdp_timing_gap_abs": 0.784,
+            "q_first_spike_time": 3.163,
+            "max_Pearson_sync_with_another_head": 0.166,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_5": {
+            "engram_mean_Wq": 0.03735179454088211,
+            "sparsity_rate": 0.8756,
+            "stdp_timing_gap_abs": 0.425,
+            "q_first_spike_time": 3.364,
+            "max_Pearson_sync_with_another_head": 0.301,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        }
+    },
+    "block_5": {
+        "head_0": {
+            "engram_mean_Wq": 0.037892717868089676,
+            "sparsity_rate": 0.8602,
+            "stdp_timing_gap_abs": 0.582,
+            "q_first_spike_time": 3.304,
+            "max_Pearson_sync_with_another_head": 0.572,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_1": {
+            "engram_mean_Wq": 0.037892717868089676,
+            "sparsity_rate": 0.8081,
+            "stdp_timing_gap_abs": 0.775,
+            "q_first_spike_time": 3.132,
+            "max_Pearson_sync_with_another_head": 0.572,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_2": {
+            "engram_mean_Wq": 0.037892717868089676,
+            "sparsity_rate": 0.7883,
+            "stdp_timing_gap_abs": 0.875,
+            "q_first_spike_time": 2.999,
+            "max_Pearson_sync_with_another_head": 0.373,
+            "HARDWARE_GATING_POLICY": "ACTIVE_NO_GATE"
+        },
+        "head_3": {
+            "engram_mean_Wq": 0.037892717868089676,
+            "sparsity_rate": 0.8149,
+            "stdp_timing_gap_abs": 0.765,
+            "q_first_spike_time": 3.142,
+            "max_Pearson_sync_with_another_head": 0.375,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_4": {
+            "engram_mean_Wq": 0.037892717868089676,
+            "sparsity_rate": 0.8877,
+            "stdp_timing_gap_abs": 0.448,
+            "q_first_spike_time": 3.42,
+            "max_Pearson_sync_with_another_head": 0.224,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_5": {
+            "engram_mean_Wq": 0.037892717868089676,
+            "sparsity_rate": 0.8831,
+            "stdp_timing_gap_abs": 0.517,
+            "q_first_spike_time": 3.417,
+            "max_Pearson_sync_with_another_head": 0.225,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        }
+    },
+    "block_6": {
+        "head_0": {
+            "engram_mean_Wq": 0.0387566015124321,
+            "sparsity_rate": 0.8993,
+            "stdp_timing_gap_abs": 0.404,
+            "q_first_spike_time": 3.511,
+            "max_Pearson_sync_with_another_head": 0.393,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_1": {
+            "engram_mean_Wq": 0.0387566015124321,
+            "sparsity_rate": 0.8656,
+            "stdp_timing_gap_abs": 0.495,
+            "q_first_spike_time": 3.372,
+            "max_Pearson_sync_with_another_head": 0.139,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_2": {
+            "engram_mean_Wq": 0.0387566015124321,
+            "sparsity_rate": 0.8627,
+            "stdp_timing_gap_abs": 0.554,
+            "q_first_spike_time": 3.381,
+            "max_Pearson_sync_with_another_head": 0.308,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_3": {
+            "engram_mean_Wq": 0.0387566015124321,
+            "sparsity_rate": 0.8771,
+            "stdp_timing_gap_abs": 0.455,
+            "q_first_spike_time": 3.406,
+            "max_Pearson_sync_with_another_head": 0.328,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_4": {
+            "engram_mean_Wq": 0.0387566015124321,
+            "sparsity_rate": 0.8662,
+            "stdp_timing_gap_abs": 0.486,
+            "q_first_spike_time": 3.361,
+            "max_Pearson_sync_with_another_head": 0.393,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_5": {
+            "engram_mean_Wq": 0.0387566015124321,
+            "sparsity_rate": 0.8626,
+            "stdp_timing_gap_abs": 0.515,
+            "q_first_spike_time": 3.358,
+            "max_Pearson_sync_with_another_head": 0.126,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        }
+    }
+}

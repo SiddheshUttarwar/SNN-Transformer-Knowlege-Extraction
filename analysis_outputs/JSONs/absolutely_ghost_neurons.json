@@ -1,0 +1,352 @@
+{
+    "Block_0": {
+        "Head_0": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_1": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_2": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_3": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_4": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_5": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        }
+    },
+    "Block_1": {
+        "Head_0": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_1": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_2": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_3": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_4": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_5": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        }
+    },
+    "Block_2": {
+        "Head_0": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_1": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_2": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_3": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_4": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_5": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        }
+    },
+    "Block_3": {
+        "Head_0": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_1": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_2": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_3": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_4": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_5": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        }
+    },
+    "Block_4": {
+        "Head_0": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_1": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_2": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0036
+        },
+        "Head_3": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_4": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_5": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        }
+    },
+    "Block_5": {
+        "Head_0": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_1": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_2": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_3": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_4": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_5": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        }
+    },
+    "Block_6": {
+        "Head_0": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_1": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_2": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_3": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0051
+        },
+        "Head_4": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        },
+        "Head_5": {
+            "n_samples_evaluated": 100,
+            "completely_abs_ghost_channels_list": [],
+            "completely_abs_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "abs_ghost_fraction_overall": 0.0
+        }
+    }
+}

@@ -1,0 +1,331 @@
+{
+    "Block_0": {
+        "Head_0": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_1": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_2": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_3": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_4": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_5": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        }
+    },
+    "Block_1": {
+        "Head_0": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_1": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_2": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_3": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_4": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_5": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        }
+    },
+    "Block_2": {
+        "Head_0": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_1": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_2": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0016,
+            "anchored_neurons_count": 20,
+            "anchored_neurons_firing_rates": {
+                "D53_N3": 4,
+                "D53_N4": 4,
+                "D53_N5": 4,
+                "D53_N6": 4,
+                "D53_N7": 4,
+                "D53_N8": 4,
+                "D53_N9": 4,
+                "D53_N10": 4,
+                "D53_N14": 4,
+                "D53_N15": 4,
+                "D53_N157": 4,
+                "D53_N158": 4,
+                "D53_N159": 4,
+                "D53_N160": 4,
+                "D53_N161": 4,
+                "D53_N162": 4,
+                "D53_N163": 4,
+                "D53_N164": 4,
+                "D53_N165": 4,
+                "D53_N184": 4
+            }
+        },
+        "Head_3": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_4": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_5": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        }
+    },
+    "Block_3": {
+        "Head_0": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_1": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_2": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_3": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_4": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_5": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        }
+    },
+    "Block_4": {
+        "Head_0": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_1": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_2": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_3": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_4": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_5": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        }
+    },
+    "Block_5": {
+        "Head_0": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_1": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_2": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_3": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_4": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_5": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        }
+    },
+    "Block_6": {
+        "Head_0": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_1": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_2": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_3": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_4": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        },
+        "Head_5": {
+            "n_samples_evaluated": 100,
+            "completely_baseline_ghost_channels": [],
+            "baseline_ghost_fraction_overall": 0.0,
+            "anchored_neurons_count": 0,
+            "anchored_neurons_firing_rates": {}
+        }
+    }
+}

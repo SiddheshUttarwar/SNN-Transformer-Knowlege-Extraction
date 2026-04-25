@@ -1,0 +1,482 @@
+{
+    "Block_0": {
+        "Head_0": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0
+        },
+        "Head_1": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                34,
+                37,
+                40,
+                41,
+                53
+            ],
+            "completely_ghost_channels_count": 5,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0781
+        },
+        "Head_2": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0
+        },
+        "Head_3": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0
+        },
+        "Head_4": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0
+        },
+        "Head_5": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                16,
+                36,
+                37,
+                63
+            ],
+            "completely_ghost_channels_count": 4,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0625
+        }
+    },
+    "Block_1": {
+        "Head_0": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0454
+        },
+        "Head_1": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0
+        },
+        "Head_2": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.1227
+        },
+        "Head_3": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0
+        },
+        "Head_4": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                1,
+                7,
+                9,
+                11,
+                28,
+                49,
+                53,
+                55
+            ],
+            "completely_ghost_channels_count": 8,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.1287
+        },
+        "Head_5": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.05
+        }
+    },
+    "Block_2": {
+        "Head_0": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0
+        },
+        "Head_1": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                6,
+                18,
+                24,
+                28,
+                32,
+                39,
+                41,
+                44,
+                49,
+                50,
+                62,
+                63
+            ],
+            "completely_ghost_channels_count": 12,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.2228
+        },
+        "Head_2": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                1,
+                5,
+                14,
+                17,
+                18,
+                20,
+                22,
+                30,
+                32,
+                36,
+                51,
+                53,
+                56,
+                63
+            ],
+            "completely_ghost_channels_count": 14,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.2188
+        },
+        "Head_3": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                2
+            ],
+            "completely_ghost_channels_count": 1,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0678
+        },
+        "Head_4": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                3,
+                21,
+                55
+            ],
+            "completely_ghost_channels_count": 3,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.111
+        },
+        "Head_5": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                1,
+                13,
+                18,
+                21,
+                28,
+                30,
+                45,
+                62
+            ],
+            "completely_ghost_channels_count": 8,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.1635
+        }
+    },
+    "Block_3": {
+        "Head_0": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                42,
+                56,
+                61
+            ],
+            "completely_ghost_channels_count": 3,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0469
+        },
+        "Head_1": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                22,
+                26,
+                28,
+                32,
+                48,
+                50,
+                56,
+                60
+            ],
+            "completely_ghost_channels_count": 8,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.2336
+        },
+        "Head_2": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.1385
+        },
+        "Head_3": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                7,
+                8,
+                19,
+                39,
+                54,
+                60
+            ],
+            "completely_ghost_channels_count": 6,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.1366
+        },
+        "Head_4": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                3,
+                5,
+                33,
+                40
+            ],
+            "completely_ghost_channels_count": 4,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.1488
+        },
+        "Head_5": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                2,
+                7,
+                10,
+                21,
+                25,
+                27,
+                46,
+                50,
+                52,
+                53
+            ],
+            "completely_ghost_channels_count": 10,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.1865
+        }
+    },
+    "Block_4": {
+        "Head_0": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                22,
+                34,
+                37,
+                46
+            ],
+            "completely_ghost_channels_count": 4,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.1235
+        },
+        "Head_1": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0104
+        },
+        "Head_2": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                9,
+                14,
+                16,
+                33
+            ],
+            "completely_ghost_channels_count": 4,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.1174
+        },
+        "Head_3": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                28
+            ],
+            "completely_ghost_channels_count": 1,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.076
+        },
+        "Head_4": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0002
+        },
+        "Head_5": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.1148
+        }
+    },
+    "Block_5": {
+        "Head_0": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0655
+        },
+        "Head_1": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.1079
+        },
+        "Head_2": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                24,
+                34
+            ],
+            "completely_ghost_channels_count": 2,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.2223
+        },
+        "Head_3": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                52
+            ],
+            "completely_ghost_channels_count": 1,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0316
+        },
+        "Head_4": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0126
+        },
+        "Head_5": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0347
+        }
+    },
+    "Block_6": {
+        "Head_0": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.2027
+        },
+        "Head_1": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.0137
+        },
+        "Head_2": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                27,
+                63
+            ],
+            "completely_ghost_channels_count": 2,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.1948
+        },
+        "Head_3": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                0,
+                7,
+                14,
+                17,
+                25,
+                28,
+                48
+            ],
+            "completely_ghost_channels_count": 7,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.2229
+        },
+        "Head_4": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [
+                58,
+                63
+            ],
+            "completely_ghost_channels_count": 2,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.1922
+        },
+        "Head_5": {
+            "n_samples_evaluated": 1,
+            "completely_ghost_channels_list": [],
+            "completely_ghost_channels_count": 0,
+            "total_channels_D": 64,
+            "total_spatial_tokens_N": 196,
+            "ghost_fraction_overall": 0.1586
+        }
+    }
+}
