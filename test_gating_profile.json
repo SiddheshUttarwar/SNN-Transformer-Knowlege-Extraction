@@ -1,0 +1,1106 @@
+{
+    "block_0": {
+        "head_0": {
+            "sparsity_q_per_timestep": [
+                0.9654,
+                0.8501,
+                0.845,
+                0.8374
+            ],
+            "sparsity_k_per_timestep": [
+                0.9658,
+                0.8518,
+                0.8494,
+                0.8367
+            ],
+            "sparsity_v_per_timestep": [
+                0.9659,
+                0.8519,
+                0.8523,
+                0.836
+            ],
+            "average_sparsity_q": 0.8745,
+            "stbp_qk_temporal_gap_abs": 0.007,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_1": {
+            "sparsity_q_per_timestep": [
+                0.963,
+                0.8462,
+                0.8446,
+                0.8332
+            ],
+            "sparsity_k_per_timestep": [
+                0.9659,
+                0.8513,
+                0.8504,
+                0.8352
+            ],
+            "sparsity_v_per_timestep": [
+                0.9619,
+                0.8446,
+                0.8445,
+                0.8308
+            ],
+            "average_sparsity_q": 0.8718,
+            "stbp_qk_temporal_gap_abs": 0.015,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": false,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_2": {
+            "sparsity_q_per_timestep": [
+                0.9631,
+                0.8496,
+                0.8475,
+                0.8347
+            ],
+            "sparsity_k_per_timestep": [
+                0.9661,
+                0.8507,
+                0.8512,
+                0.8369
+            ],
+            "sparsity_v_per_timestep": [
+                0.9661,
+                0.8515,
+                0.85,
+                0.8381
+            ],
+            "average_sparsity_q": 0.8737,
+            "stbp_qk_temporal_gap_abs": 0.007,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        }
+    },
+    "block_1": {
+        "head_0": {
+            "sparsity_q_per_timestep": [
+                0.9651,
+                0.849,
+                0.8506,
+                0.849
+            ],
+            "sparsity_k_per_timestep": [
+                0.9645,
+                0.8488,
+                0.8548,
+                0.8529
+            ],
+            "sparsity_v_per_timestep": [
+                0.9646,
+                0.8493,
+                0.8559,
+                0.8552
+            ],
+            "average_sparsity_q": 0.8784,
+            "stbp_qk_temporal_gap_abs": 0.003,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_1": {
+            "sparsity_q_per_timestep": [
+                0.9666,
+                0.8522,
+                0.8527,
+                0.8526
+            ],
+            "sparsity_k_per_timestep": [
+                0.9628,
+                0.8484,
+                0.8479,
+                0.8478
+            ],
+            "sparsity_v_per_timestep": [
+                0.9638,
+                0.8513,
+                0.8524,
+                0.8528
+            ],
+            "average_sparsity_q": 0.881,
+            "stbp_qk_temporal_gap_abs": 0.012,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_2": {
+            "sparsity_q_per_timestep": [
+                0.9642,
+                0.8473,
+                0.8506,
+                0.8475
+            ],
+            "sparsity_k_per_timestep": [
+                0.9658,
+                0.8541,
+                0.8579,
+                0.8546
+            ],
+            "sparsity_v_per_timestep": [
+                0.9636,
+                0.8494,
+                0.8481,
+                0.8426
+            ],
+            "average_sparsity_q": 0.8774,
+            "stbp_qk_temporal_gap_abs": 0.016,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": false,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        }
+    },
+    "block_2": {
+        "head_0": {
+            "sparsity_q_per_timestep": [
+                0.9643,
+                0.8522,
+                0.8557,
+                0.8558
+            ],
+            "sparsity_k_per_timestep": [
+                0.9672,
+                0.8568,
+                0.863,
+                0.8599
+            ],
+            "sparsity_v_per_timestep": [
+                0.9626,
+                0.8476,
+                0.857,
+                0.8663
+            ],
+            "average_sparsity_q": 0.882,
+            "stbp_qk_temporal_gap_abs": 0.013,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_1": {
+            "sparsity_q_per_timestep": [
+                0.9631,
+                0.8478,
+                0.8498,
+                0.8448
+            ],
+            "sparsity_k_per_timestep": [
+                0.9653,
+                0.8507,
+                0.8574,
+                0.8601
+            ],
+            "sparsity_v_per_timestep": [
+                0.9666,
+                0.8526,
+                0.8598,
+                0.8603
+            ],
+            "average_sparsity_q": 0.8763,
+            "stbp_qk_temporal_gap_abs": 0.012,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_2": {
+            "sparsity_q_per_timestep": [
+                0.9626,
+                0.8455,
+                0.8494,
+                0.8468
+            ],
+            "sparsity_k_per_timestep": [
+                0.9663,
+                0.8554,
+                0.8643,
+                0.8639
+            ],
+            "sparsity_v_per_timestep": [
+                0.9647,
+                0.8496,
+                0.854,
+                0.8544
+            ],
+            "average_sparsity_q": 0.8761,
+            "stbp_qk_temporal_gap_abs": 0.03,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": false,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        }
+    },
+    "block_3": {
+        "head_0": {
+            "sparsity_q_per_timestep": [
+                0.9666,
+                0.8548,
+                0.8634,
+                0.8689
+            ],
+            "sparsity_k_per_timestep": [
+                0.964,
+                0.8491,
+                0.8584,
+                0.8585
+            ],
+            "sparsity_v_per_timestep": [
+                0.9643,
+                0.8533,
+                0.8599,
+                0.8689
+            ],
+            "average_sparsity_q": 0.8884,
+            "stbp_qk_temporal_gap_abs": 0.013,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_1": {
+            "sparsity_q_per_timestep": [
+                0.9657,
+                0.854,
+                0.87,
+                0.8754
+            ],
+            "sparsity_k_per_timestep": [
+                0.9639,
+                0.8485,
+                0.8582,
+                0.8529
+            ],
+            "sparsity_v_per_timestep": [
+                0.9618,
+                0.844,
+                0.8535,
+                0.8516
+            ],
+            "average_sparsity_q": 0.8913,
+            "stbp_qk_temporal_gap_abs": 0.019,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_2": {
+            "sparsity_q_per_timestep": [
+                0.964,
+                0.85,
+                0.8591,
+                0.859
+            ],
+            "sparsity_k_per_timestep": [
+                0.9624,
+                0.8437,
+                0.8541,
+                0.8604
+            ],
+            "sparsity_v_per_timestep": [
+                0.9631,
+                0.845,
+                0.8581,
+                0.8631
+            ],
+            "average_sparsity_q": 0.883,
+            "stbp_qk_temporal_gap_abs": 0.014,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": false,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        }
+    },
+    "block_4": {
+        "head_0": {
+            "sparsity_q_per_timestep": [
+                0.9643,
+                0.848,
+                0.8621,
+                0.8632
+            ],
+            "sparsity_k_per_timestep": [
+                0.9633,
+                0.848,
+                0.8541,
+                0.8508
+            ],
+            "sparsity_v_per_timestep": [
+                0.9646,
+                0.8528,
+                0.8626,
+                0.8601
+            ],
+            "average_sparsity_q": 0.8844,
+            "stbp_qk_temporal_gap_abs": 0.007,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_1": {
+            "sparsity_q_per_timestep": [
+                0.963,
+                0.8502,
+                0.8565,
+                0.8552
+            ],
+            "sparsity_k_per_timestep": [
+                0.9601,
+                0.8438,
+                0.8478,
+                0.8516
+            ],
+            "sparsity_v_per_timestep": [
+                0.9638,
+                0.8492,
+                0.8545,
+                0.8496
+            ],
+            "average_sparsity_q": 0.8812,
+            "stbp_qk_temporal_gap_abs": 0.018,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": false,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_2": {
+            "sparsity_q_per_timestep": [
+                0.964,
+                0.8478,
+                0.8573,
+                0.8573
+            ],
+            "sparsity_k_per_timestep": [
+                0.9637,
+                0.8477,
+                0.8582,
+                0.8574
+            ],
+            "sparsity_v_per_timestep": [
+                0.9619,
+                0.8468,
+                0.8527,
+                0.8612
+            ],
+            "average_sparsity_q": 0.8816,
+            "stbp_qk_temporal_gap_abs": 0.012,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        }
+    },
+    "block_5": {
+        "head_0": {
+            "sparsity_q_per_timestep": [
+                0.965,
+                0.8503,
+                0.8665,
+                0.8751
+            ],
+            "sparsity_k_per_timestep": [
+                0.9654,
+                0.8503,
+                0.8573,
+                0.8566
+            ],
+            "sparsity_v_per_timestep": [
+                0.9634,
+                0.8478,
+                0.8542,
+                0.8478
+            ],
+            "average_sparsity_q": 0.8892,
+            "stbp_qk_temporal_gap_abs": 0.006,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_1": {
+            "sparsity_q_per_timestep": [
+                0.9636,
+                0.8468,
+                0.8579,
+                0.8557
+            ],
+            "sparsity_k_per_timestep": [
+                0.9671,
+                0.8556,
+                0.8703,
+                0.8705
+            ],
+            "sparsity_v_per_timestep": [
+                0.9631,
+                0.8478,
+                0.86,
+                0.8583
+            ],
+            "average_sparsity_q": 0.881,
+            "stbp_qk_temporal_gap_abs": 0.026,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": false,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_2": {
+            "sparsity_q_per_timestep": [
+                0.9648,
+                0.8517,
+                0.8664,
+                0.8733
+            ],
+            "sparsity_k_per_timestep": [
+                0.9647,
+                0.8492,
+                0.8567,
+                0.8567
+            ],
+            "sparsity_v_per_timestep": [
+                0.9658,
+                0.8494,
+                0.8625,
+                0.8575
+            ],
+            "average_sparsity_q": 0.889,
+            "stbp_qk_temporal_gap_abs": 0.008,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        }
+    },
+    "block_6": {
+        "head_0": {
+            "sparsity_q_per_timestep": [
+                0.9633,
+                0.8469,
+                0.8471,
+                0.8387
+            ],
+            "sparsity_k_per_timestep": [
+                0.966,
+                0.8531,
+                0.8639,
+                0.8625
+            ],
+            "sparsity_v_per_timestep": [
+                0.965,
+                0.8447,
+                0.858,
+                0.8641
+            ],
+            "average_sparsity_q": 0.874,
+            "stbp_qk_temporal_gap_abs": 0.023,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": false,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_1": {
+            "sparsity_q_per_timestep": [
+                0.9634,
+                0.8486,
+                0.8513,
+                0.8431
+            ],
+            "sparsity_k_per_timestep": [
+                0.965,
+                0.8537,
+                0.8692,
+                0.8677
+            ],
+            "sparsity_v_per_timestep": [
+                0.9649,
+                0.8499,
+                0.8476,
+                0.8462
+            ],
+            "average_sparsity_q": 0.8766,
+            "stbp_qk_temporal_gap_abs": 0.02,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_2": {
+            "sparsity_q_per_timestep": [
+                0.9663,
+                0.8541,
+                0.857,
+                0.8477
+            ],
+            "sparsity_k_per_timestep": [
+                0.9656,
+                0.8526,
+                0.8609,
+                0.859
+            ],
+            "sparsity_v_per_timestep": [
+                0.9653,
+                0.8538,
+                0.8652,
+                0.8684
+            ],
+            "average_sparsity_q": 0.8813,
+            "stbp_qk_temporal_gap_abs": 0.003,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        }
+    },
+    "block_7": {
+        "head_0": {
+            "sparsity_q_per_timestep": [
+                0.9618,
+                0.8472,
+                0.8557,
+                0.8584
+            ],
+            "sparsity_k_per_timestep": [
+                0.9608,
+                0.841,
+                0.8555,
+                0.8604
+            ],
+            "sparsity_v_per_timestep": [
+                0.9637,
+                0.8487,
+                0.8595,
+                0.866
+            ],
+            "average_sparsity_q": 0.8808,
+            "stbp_qk_temporal_gap_abs": 0.017,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_1": {
+            "sparsity_q_per_timestep": [
+                0.9632,
+                0.8474,
+                0.859,
+                0.8516
+            ],
+            "sparsity_k_per_timestep": [
+                0.9644,
+                0.8495,
+                0.859,
+                0.8582
+            ],
+            "sparsity_v_per_timestep": [
+                0.9684,
+                0.8566,
+                0.868,
+                0.8688
+            ],
+            "average_sparsity_q": 0.8803,
+            "stbp_qk_temporal_gap_abs": 0.004,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_2": {
+            "sparsity_q_per_timestep": [
+                0.9623,
+                0.8454,
+                0.8478,
+                0.8424
+            ],
+            "sparsity_k_per_timestep": [
+                0.9654,
+                0.8519,
+                0.8618,
+                0.8724
+            ],
+            "sparsity_v_per_timestep": [
+                0.9645,
+                0.8526,
+                0.8608,
+                0.8621
+            ],
+            "average_sparsity_q": 0.8745,
+            "stbp_qk_temporal_gap_abs": 0.022,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": false,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        }
+    },
+    "block_8": {
+        "head_0": {
+            "sparsity_q_per_timestep": [
+                0.9628,
+                0.8461,
+                0.86,
+                0.8632
+            ],
+            "sparsity_k_per_timestep": [
+                0.9638,
+                0.8505,
+                0.8585,
+                0.8527
+            ],
+            "sparsity_v_per_timestep": [
+                0.9656,
+                0.8529,
+                0.8543,
+                0.8444
+            ],
+            "average_sparsity_q": 0.883,
+            "stbp_qk_temporal_gap_abs": 0.01,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": false,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_1": {
+            "sparsity_q_per_timestep": [
+                0.9643,
+                0.8494,
+                0.8632,
+                0.8582
+            ],
+            "sparsity_k_per_timestep": [
+                0.9668,
+                0.854,
+                0.8598,
+                0.8558
+            ],
+            "sparsity_v_per_timestep": [
+                0.9662,
+                0.8548,
+                0.865,
+                0.8651
+            ],
+            "average_sparsity_q": 0.8838,
+            "stbp_qk_temporal_gap_abs": 0.011,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_2": {
+            "sparsity_q_per_timestep": [
+                0.9653,
+                0.8531,
+                0.8725,
+                0.8689
+            ],
+            "sparsity_k_per_timestep": [
+                0.9668,
+                0.8527,
+                0.8668,
+                0.8686
+            ],
+            "sparsity_v_per_timestep": [
+                0.9673,
+                0.8588,
+                0.8693,
+                0.8682
+            ],
+            "average_sparsity_q": 0.8899,
+            "stbp_qk_temporal_gap_abs": 0.003,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        }
+    },
+    "block_9": {
+        "head_0": {
+            "sparsity_q_per_timestep": [
+                0.9636,
+                0.8512,
+                0.8656,
+                0.8677
+            ],
+            "sparsity_k_per_timestep": [
+                0.9657,
+                0.8551,
+                0.8685,
+                0.8736
+            ],
+            "sparsity_v_per_timestep": [
+                0.9636,
+                0.8501,
+                0.8665,
+                0.8668
+            ],
+            "average_sparsity_q": 0.887,
+            "stbp_qk_temporal_gap_abs": 0.01,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_1": {
+            "sparsity_q_per_timestep": [
+                0.965,
+                0.8505,
+                0.859,
+                0.8606
+            ],
+            "sparsity_k_per_timestep": [
+                0.9663,
+                0.8558,
+                0.862,
+                0.855
+            ],
+            "sparsity_v_per_timestep": [
+                0.9654,
+                0.8521,
+                0.8579,
+                0.8564
+            ],
+            "average_sparsity_q": 0.8838,
+            "stbp_qk_temporal_gap_abs": 0.013,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_2": {
+            "sparsity_q_per_timestep": [
+                0.9625,
+                0.8482,
+                0.8522,
+                0.8408
+            ],
+            "sparsity_k_per_timestep": [
+                0.9642,
+                0.8505,
+                0.8638,
+                0.871
+            ],
+            "sparsity_v_per_timestep": [
+                0.9651,
+                0.8508,
+                0.8677,
+                0.8642
+            ],
+            "average_sparsity_q": 0.8759,
+            "stbp_qk_temporal_gap_abs": 0.011,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": false,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        }
+    },
+    "block_10": {
+        "head_0": {
+            "sparsity_q_per_timestep": [
+                0.9636,
+                0.8519,
+                0.8598,
+                0.8511
+            ],
+            "sparsity_k_per_timestep": [
+                0.9653,
+                0.8509,
+                0.8674,
+                0.8608
+            ],
+            "sparsity_v_per_timestep": [
+                0.9643,
+                0.8494,
+                0.8698,
+                0.8792
+            ],
+            "average_sparsity_q": 0.8816,
+            "stbp_qk_temporal_gap_abs": 0.005,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": false,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        },
+        "head_1": {
+            "sparsity_q_per_timestep": [
+                0.9657,
+                0.8566,
+                0.8761,
+                0.8811
+            ],
+            "sparsity_k_per_timestep": [
+                0.9661,
+                0.8559,
+                0.8734,
+                0.8756
+            ],
+            "sparsity_v_per_timestep": [
+                0.9651,
+                0.8542,
+                0.8569,
+                0.8541
+            ],
+            "average_sparsity_q": 0.8949,
+            "stbp_qk_temporal_gap_abs": 0.002,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_2": {
+            "sparsity_q_per_timestep": [
+                0.9632,
+                0.8517,
+                0.8592,
+                0.8675
+            ],
+            "sparsity_k_per_timestep": [
+                0.9635,
+                0.8458,
+                0.8615,
+                0.8659
+            ],
+            "sparsity_v_per_timestep": [
+                0.9637,
+                0.852,
+                0.8625,
+                0.8634
+            ],
+            "average_sparsity_q": 0.8854,
+            "stbp_qk_temporal_gap_abs": 0.01,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        }
+    },
+    "block_11": {
+        "head_0": {
+            "sparsity_q_per_timestep": [
+                0.9655,
+                0.8527,
+                0.8681,
+                0.868
+            ],
+            "sparsity_k_per_timestep": [
+                0.9658,
+                0.8547,
+                0.8677,
+                0.8737
+            ],
+            "sparsity_v_per_timestep": [
+                0.9657,
+                0.8552,
+                0.8762,
+                0.8744
+            ],
+            "average_sparsity_q": 0.8886,
+            "stbp_qk_temporal_gap_abs": 0.007,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_1": {
+            "sparsity_q_per_timestep": [
+                0.9657,
+                0.8543,
+                0.8689,
+                0.8708
+            ],
+            "sparsity_k_per_timestep": [
+                0.9646,
+                0.8537,
+                0.8684,
+                0.8717
+            ],
+            "sparsity_v_per_timestep": [
+                0.9648,
+                0.8507,
+                0.8636,
+                0.862
+            ],
+            "average_sparsity_q": 0.8899,
+            "stbp_qk_temporal_gap_abs": 0.005,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": true,
+            "HARDWARE_GATING_POLICY": "STATICALLY_GATED_BY_REDUNDANCY"
+        },
+        "head_2": {
+            "sparsity_q_per_timestep": [
+                0.9647,
+                0.8492,
+                0.8573,
+                0.8463
+            ],
+            "sparsity_k_per_timestep": [
+                0.9649,
+                0.8529,
+                0.8675,
+                0.8576
+            ],
+            "sparsity_v_per_timestep": [
+                0.9631,
+                0.8512,
+                0.8773,
+                0.8772
+            ],
+            "average_sparsity_q": 0.8794,
+            "stbp_qk_temporal_gap_abs": 0.013,
+            "dead_neurons_pct_q": 0.0,
+            "ghost_neurons_pct_q": 0.0,
+            "dead_neurons_pct_k": 0.0,
+            "ghost_neurons_pct_k": 0.0,
+            "dead_neurons_pct_v": 0.0,
+            "ghost_neurons_pct_v": 0.0,
+            "is_highly_correlated": false,
+            "HARDWARE_GATING_POLICY": "LATE_WAKEUP_GATE"
+        }
+    }
+}
