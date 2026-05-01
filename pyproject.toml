@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spikegate"
+dynamic = ["version"]
+description = "Dynamic hardware gating framework for Spiking Neural Network Transformers"
+readme = "spikegate/README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Siddhesh Uttarwar"},
+]
+keywords = ["spiking-neural-networks", "neuromorphic", "hardware-gating", "transformers", "explainability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "torch>=1.13",
+    "numpy>=1.21",
+    "tqdm>=4.60",
+]
+
+[project.optional-dependencies]
+report = [
+    "matplotlib>=3.5",
+    "seaborn>=0.12",
+]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.4",
+]
+all = ["spikegate[report,dev]"]
+
+[project.urls]
+Repository = "https://github.com/SiddheshUttarwar/SNN-Transformer-Knowlege-Extraction"
+
+[tool.setuptools.dynamic]
+version = {attr = "spikegate._version.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["spikegate*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+markers = [
+    "slow: marks tests that require GPU or large data (deselect with '-m \"not slow\"')",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["spikegate"]

@@ -2,7 +2,7 @@ import torch
 import timm
 from spikegate import convert_to_gated_snn, AutoProfiler
 
-def main():
+def test_full_pipeline():
     print("1. Loading standard pretrained ViT from timm...")
     # Load a small vision transformer
     model = timm.create_model('vit_tiny_patch16_224', pretrained=False)
@@ -57,5 +57,3 @@ def main():
     
     print("\nPipeline Test Completed Successfully!")
 
-if __name__ == "__main__":
-    main()

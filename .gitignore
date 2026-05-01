@@ -28,3 +28,13 @@ imagenet/
 .git-backup-maxformer/
 .vscode/
 checkpoints/
+
+# Package builds
+spikegate.egg-info/
+
+# Tests & Reports
+.pytest_cache/
+.coverage
+htmlcov/
+analysis_outputs/
+test_*.json
