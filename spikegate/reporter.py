@@ -221,6 +221,57 @@ def plot_stbp_gap(
     return _save(fig, out_dir, "stbp_gap.png")
 
 
+def plot_head_importance_heatmap(
+    importance: dict, num_blocks: int, num_heads: int, out_dir: str
+) -> str:
+    """Block x Head importance-score heatmap from MASK-ONE-OUT."""
+    mat = np.full((num_blocks, num_heads), np.nan)
+    for key, data in importance.items():
+        # key = "B0H3"
+        b = int(key.split("H")[0][1:])
+        h = int(key.split("H")[1])
+        if b < num_blocks and h < num_heads:
+            mat[b, h] = data["mean_importance"]
+
+    fig, ax = plt.subplots(figsize=(8, 6))
+    sns.heatmap(mat, annot=True, fmt=".2f", cmap="YlOrRd",
+                xticklabels=[f"H{h}" for h in range(num_heads)],
+                yticklabels=[f"B{b}" for b in range(num_blocks)],
+                ax=ax, linewidths=0.4, linecolor="#30363d",
+                cbar_kws={"label": "Importance Score (Mean across runs)"})
+    ax.set_title("Head Importance (MASK-ONE-OUT)", fontsize=14, fontweight="bold", pad=12)
+    ax.set_xlabel("Attention Head")
+    ax.set_ylabel("Transformer Block")
+    return _save(fig, out_dir, "head_importance_heatmap.png")
+
+
+def plot_ablation_comparison(ablation_results: dict, out_dir: str) -> str:
+    """Grouped bar chart comparing fidelity/savings across gating policies."""
+    policies = [k for k in ablation_results if k != "BASELINE"]
+    fids = [ablation_results[k]["mean_fidelity"] for k in policies]
+    savs = [ablation_results[k]["mean_savings"] for k in policies]
+    fid_err = [ablation_results[k]["std_fidelity"] for k in policies]
+    sav_err = [ablation_results[k]["std_savings"] for k in policies]
+
+    fig, ax = plt.subplots(figsize=(12, 5))
+    x = np.arange(len(policies))
+    w = 0.35
+    ax.bar(x - w/2, fids, w, yerr=fid_err, label="Fidelity %", color="#58a6ff",
+           edgecolor="#0d1117", capsize=3)
+    ax.bar(x + w/2, savs, w, yerr=sav_err, label="Savings %", color="#f78166",
+           edgecolor="#0d1117", capsize=3)
+    ax.set_xticks(x)
+    short = [p.replace("ONLY_", "").replace("_", " ")[:20] for p in policies]
+    ax.set_xticklabels(short, rotation=15, ha="right", fontsize=8)
+    ax.set_ylabel("Percentage")
+    ax.legend()
+    ax.set_title("Per-Policy Ablation (Mean +/- Std across runs)",
+                 fontsize=14, fontweight="bold", pad=12)
+    ax.grid(True, axis="y", alpha=0.2)
+    fig.tight_layout()
+    return _save(fig, out_dir, "ablation_comparison.png")
+
+
 # =====================================================================
 #  Report Generator
 # =====================================================================
@@ -311,11 +362,168 @@ class ReportGenerator:
 
         return run_results
 
-    def generate_figures(self, run_results: List[Dict]) -> Dict[str, str]:
-        """Generates all 6 report visualizations.
+    def run_ablation_study(
+        self,
+        data_chunks: list,
+        device: str = "cuda",
+    ) -> Dict:
+        """Runs per-policy ablation across all data chunks.
+
+        For each gating policy, evaluates fidelity and savings on every chunk,
+        then computes mean +/- std.
 
         Returns:
-            Dict mapping figure name to its absolute file path.
+            Dict keyed by policy name with mean/std fidelity and savings.
+        """
+        policies_to_test = [
+            ("FULL_POLICY", None),
+            ("ONLY_STATICALLY_PRUNE", GatingPolicy.STATICALLY_PRUNE_OR_EARLY_EXIT_T1.value),
+            ("ONLY_LATE_WAKEUP_GATE", GatingPolicy.LATE_WAKEUP_GATE.value),
+            ("ONLY_REDUNDANCY_GATE", GatingPolicy.STATICALLY_GATED_BY_REDUNDANCY.value),
+            ("ONLY_DYNAMIC_ONLINE_PRUNING", GatingPolicy.DYNAMIC_ONLINE_PRUNING.value),
+        ]
+
+        results: Dict = {"BASELINE": {"mean_fidelity": 100.0, "std_fidelity": 0.0,
+                                       "mean_savings": 0.0, "std_savings": 0.0}}
+
+        for pol_name, pol_val in policies_to_test:
+            print(f"  Ablation: {pol_name}")
+            fids, savs = [], []
+
+            for i, chunk in enumerate(data_chunks):
+                # Baseline pass for this chunk
+                self.gate_controller.override_policy = GatingPolicy.ACTIVE_NO_GATE.value
+                base_preds = self._eval_chunk(chunk, device)
+
+                # Policy pass
+                self.gate_controller.override_policy = pol_val
+                self.gate_controller.reset_compute_counters()
+                pol_preds = self._eval_chunk(chunk, device)
+
+                fidelity = (pol_preds == base_preds).float().mean().item() * 100
+                bypassed = self.gate_controller.bypassed_kv_computations
+                total = self.gate_controller.total_kv_computations
+                savings = (bypassed / total * 100) if total > 0 else 0.0
+                fids.append(fidelity)
+                savs.append(savings)
+
+            results[pol_name] = {
+                "mean_fidelity": round(np.mean(fids), 2),
+                "std_fidelity": round(np.std(fids), 2),
+                "mean_savings": round(np.mean(savs), 2),
+                "std_savings": round(np.std(savs), 2),
+                "per_run_fidelity": [round(f, 2) for f in fids],
+                "per_run_savings": [round(s, 2) for s in savs],
+            }
+            print(f"    Fidelity: {np.mean(fids):.2f} +/- {np.std(fids):.2f}  "
+                  f"Savings: {np.mean(savs):.2f} +/- {np.std(savs):.2f}")
+
+        return results
+
+    def run_head_importance_study(
+        self,
+        data_chunks: list,
+        device: str = "cuda",
+        checkpoint_file: Optional[str] = None,
+    ) -> Dict:
+        """Runs MASK-ONE-OUT across all data chunks for each head.
+
+        For each head, disables it and evaluates fidelity on every chunk,
+        then computes mean +/- std importance score.
+
+        Args:
+            data_chunks: List of dataloaders (one per run).
+            device: Device string.
+            checkpoint_file: Path for intermediate saves (resume on crash).
+
+        Returns:
+            Dict keyed by head ID (e.g. 'B0H3') with mean/std importance.
+        """
+        # Load checkpoint or start fresh
+        if checkpoint_file and os.path.exists(checkpoint_file):
+            with open(checkpoint_file, "r") as f:
+                results = json.load(f)
+            print(f"  Resumed from checkpoint ({len(results)} heads done)")
+        else:
+            results = {}
+
+        total_heads = self.num_blocks * self.num_heads
+        done = len(results)
+
+        for b in range(self.num_blocks):
+            for h in range(self.num_heads):
+                head_key = f"B{b}H{h}"
+                if head_key in results:
+                    continue
+
+                done += 1
+                print(f"  [{done}/{total_heads}] MASK-ONE-OUT: {head_key}")
+
+                fids = []
+                for chunk in data_chunks:
+                    # Baseline
+                    self.gate_controller.override_policy = GatingPolicy.ACTIVE_NO_GATE.value
+                    self.gate_controller.override_mode = None
+                    base_preds = self._eval_chunk(chunk, device)
+
+                    # Mask this head
+                    self.gate_controller.override_mode = "MASK_ONE"
+                    self.gate_controller.override_policy = None
+                    self.gate_controller.override_target = (b, h)
+                    masked_preds = self._eval_chunk(chunk, device)
+
+                    fidelity = (masked_preds == base_preds).float().mean().item() * 100
+                    fids.append(100.0 - fidelity)  # importance = drop
+
+                try:
+                    orig_policy = self.profile[f"block_{b}"][f"head_{h}"]["HARDWARE_GATING_POLICY"]
+                except (KeyError, TypeError):
+                    orig_policy = "UNKNOWN"
+
+                results[head_key] = {
+                    "mean_importance": round(np.mean(fids), 2),
+                    "std_importance": round(np.std(fids), 2),
+                    "per_run_importance": [round(f, 2) for f in fids],
+                    "original_policy": orig_policy,
+                }
+                print(f"    Importance: {np.mean(fids):.2f} +/- {np.std(fids):.2f}  "
+                      f"Policy: {orig_policy}")
+
+                if checkpoint_file:
+                    with open(checkpoint_file, "w") as f:
+                        json.dump(results, f, indent=4)
+
+        # Clean up overrides
+        self.gate_controller.override_mode = None
+        self.gate_controller.override_target = None
+        self.gate_controller.override_policy = None
+
+        if checkpoint_file and os.path.exists(checkpoint_file):
+            os.remove(checkpoint_file)
+
+        return results
+
+    def _eval_chunk(self, chunk: list, device: str) -> torch.Tensor:
+        """Runs inference on a chunk and returns predicted class indices."""
+        self.model.eval()
+        preds = []
+        with torch.no_grad():
+            for batch in chunk:
+                x = batch[0].to(device)
+                logits = self.model(x)
+                preds.append(logits.argmax(dim=-1).cpu())
+        return torch.cat(preds)
+
+    def generate_figures(
+        self,
+        run_results: List[Dict],
+        head_importance: Optional[Dict] = None,
+        ablation_results: Optional[Dict] = None,
+    ) -> Dict[str, str]:
+        """Generates all report visualizations.
+
+        Returns:
+            Dict mapping figure name to its file path.
         """
         print("Generating visualizations...")
         d = self.figures_dir
@@ -327,6 +535,11 @@ class ReportGenerator:
             "stability": plot_run_stability(run_results, d),
             "stbp_gap": plot_stbp_gap(self.profile, self.num_blocks, self.num_heads, d),
         }
+        if head_importance:
+            paths["head_importance"] = plot_head_importance_heatmap(
+                head_importance, self.num_blocks, self.num_heads, d)
+        if ablation_results:
+            paths["ablation"] = plot_ablation_comparison(ablation_results, d)
         print(f"  Generated {len(paths)} figures in {d}/")
         return paths
 
@@ -336,6 +549,8 @@ class ReportGenerator:
         figure_paths: Dict[str, str],
         images_per_run: int,
         elapsed_sec: float = 0.0,
+        head_importance: Optional[Dict] = None,
+        ablation_results: Optional[Dict] = None,
     ) -> str:
         """Assembles a comprehensive Markdown report.
 
@@ -439,6 +654,31 @@ class ReportGenerator:
                   f"{gap:.3f} | {dq:.1f} | {gq:.1f} | `{pol}` |")
         w("")
 
+        # Head Importance
+        if head_importance and "head_importance" in figure_paths:
+            w("## 8. Head Importance Analysis (MASK-ONE-OUT, Multi-Run)\n")
+            w(f"![Head Importance]({os.path.basename(figure_paths['head_importance'])})\n")
+            w("| Head | Mean Importance | Std | Policy |")
+            w("|---|---|---|---|")
+            sorted_heads = sorted(head_importance.items(),
+                                  key=lambda x: -x[1]["mean_importance"])
+            for key, data in sorted_heads:
+                w(f"| `{key}` | {data['mean_importance']:.2f} | "
+                  f"{data['std_importance']:.2f} | `{data['original_policy']}` |")
+            w("")
+
+        # Ablation
+        if ablation_results and "ablation" in figure_paths:
+            w("## 9. Per-Policy Ablation Study (Multi-Run)\n")
+            w(f"![Ablation]({os.path.basename(figure_paths['ablation'])})\n")
+            w("| Policy | Mean Fidelity | Std Fidelity | Mean Savings | Std Savings |")
+            w("|---|---|---|---|---|")
+            for pol, data in ablation_results.items():
+                w(f"| `{pol}` | {data['mean_fidelity']:.2f} | "
+                  f"{data['std_fidelity']:.2f} | {data['mean_savings']:.2f} | "
+                  f"{data['std_savings']:.2f} |")
+            w("")
+
         out_path = os.path.join(self.output_dir, "SpikeGate_Comprehensive_Report.md")
         with open(out_path, "w", encoding="utf-8") as f:
             f.write("\n".join(lines))
@@ -453,7 +693,14 @@ class ReportGenerator:
         device: str = "cuda",
         images_per_run: int = 500,
     ) -> str:
-        """Convenience method: runs stability study, generates figures, writes report.
+        """Runs all studies across all chunks, generates figures, writes report.
+
+        Pipeline:
+        1. Multi-run gating stability study
+        2. Per-policy ablation study (across all chunks)
+        3. Head importance study (MASK-ONE-OUT across all chunks)
+        4. Generate 8 visualizations
+        5. Assemble Markdown report
 
         Args:
             data_chunks: List of dataloaders (one per run).
@@ -465,24 +712,48 @@ class ReportGenerator:
         """
         t0 = time.time()
 
+        # 1. Stability
         print("=" * 60)
-        print("  Phase: Multi-Run Gating Stability Study")
+        print("  Phase 1: Multi-Run Gating Stability Study")
         print("=" * 60)
         run_results = self.run_stability_study(data_chunks, device)
-
         with open(os.path.join(self.output_dir, "run_stability_results.json"), "w") as f:
             json.dump(run_results, f, indent=4)
 
+        # 2. Ablation
         print("\n" + "=" * 60)
-        print("  Phase: Generating Visualizations")
+        print("  Phase 2: Per-Policy Ablation Study (Multi-Run)")
         print("=" * 60)
-        figure_paths = self.generate_figures(run_results)
+        ablation_results = self.run_ablation_study(data_chunks, device)
+        with open(os.path.join(self.output_dir, "ablation_results.json"), "w") as f:
+            json.dump(ablation_results, f, indent=4)
 
+        # 3. Head Importance
         print("\n" + "=" * 60)
-        print("  Phase: Assembling Report")
+        print("  Phase 3: Head Importance Study (Multi-Run)")
+        print("=" * 60)
+        head_importance = self.run_head_importance_study(
+            data_chunks, device,
+            checkpoint_file=os.path.join(self.output_dir, "_head_importance_ckpt.json"),
+        )
+        with open(os.path.join(self.output_dir, "head_importance_results.json"), "w") as f:
+            json.dump(head_importance, f, indent=4)
+
+        # 4. Visualizations
+        print("\n" + "=" * 60)
+        print("  Phase 4: Generating Visualizations")
+        print("=" * 60)
+        figure_paths = self.generate_figures(run_results, head_importance, ablation_results)
+
+        # 5. Report
+        print("\n" + "=" * 60)
+        print("  Phase 5: Assembling Report")
         print("=" * 60)
         elapsed = time.time() - t0
-        report_path = self.generate_report(run_results, figure_paths, images_per_run, elapsed)
+        report_path = self.generate_report(
+            run_results, figure_paths, images_per_run, elapsed,
+            head_importance, ablation_results,
+        )
 
         print(f"\nAll done in {elapsed / 60:.1f} minutes!")
         return report_path
