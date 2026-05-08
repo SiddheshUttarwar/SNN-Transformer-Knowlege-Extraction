@@ -311,6 +311,53 @@ class ReportGenerator:
         os.makedirs(self.figures_dir, exist_ok=True)
         _set_dark_style()
 
+    def _theoretical_savings(self, override_policy: Optional[str] = None) -> float:
+        """Projected K/V compute savings derived from the gating profile.
+
+        Used as a fallback when the model is a native SNN whose forward pass
+        does not call ``DynamicGateController.should_compute_kv()`` directly
+        (i.e. ``total_kv_computations`` stays zero after inference).
+
+        Savings represent the fraction of K/V matrix multiplications that
+        *would* be bypassed on neuromorphic hardware implementing these gates.
+
+        Args:
+            override_policy: If set, apply this single policy to every head
+                (mirrors the ablation study's ``override_policy`` logic).
+                Pass ``None`` to use each head's assigned profile policy.
+        """
+        try:
+            t_steps = len(self.profile["block_0"]["head_0"]["sparsity_q_per_timestep"])
+        except (KeyError, TypeError):
+            t_steps = 4
+
+        total_slots = self.num_blocks * self.num_heads * t_steps
+        if total_slots == 0:
+            return 0.0
+
+        bypassed = 0.0
+        for b in range(self.num_blocks):
+            for h in range(self.num_heads):
+                head = self.profile[f"block_{b}"][f"head_{h}"]
+                pol = override_policy if override_policy is not None else head["HARDWARE_GATING_POLICY"]
+
+                if pol in (
+                    GatingPolicy.STATICALLY_PRUNE_OR_EARLY_EXIT_T1.value,
+                    GatingPolicy.STATICALLY_GATED_BY_REDUNDANCY.value,
+                ):
+                    bypassed += t_steps          # all timesteps skipped
+                elif pol == GatingPolicy.LATE_WAKEUP_GATE.value:
+                    bypassed += 1                # timestep 0 skipped
+                elif pol == GatingPolicy.DYNAMIC_KEY_EXIT_WAIT_T2.value:
+                    bypassed += 2                # first 2 timesteps skipped
+                elif pol == GatingPolicy.DYNAMIC_ONLINE_PRUNING.value:
+                    # Q sparsity is the fraction of timesteps that would be pruned
+                    avg_q = head.get("average_sparsity_q", 0.0)
+                    bypassed += avg_q * t_steps
+                # ACTIVE_NO_GATE → 0
+
+        return bypassed / total_slots * 100
+
     def run_stability_study(
         self,
         data_chunks: list,
@@ -354,8 +401,13 @@ class ReportGenerator:
             fidelity = (gated == baseline).float().mean().item() * 100
 
             bypassed = self.gate_controller.bypassed_kv_computations
-            total = self.gate_controller.total_kv_computations
-            savings = (bypassed / total * 100) if total > 0 else 0.0
+            total    = self.gate_controller.total_kv_computations
+            if total > 0:
+                savings = bypassed / total * 100
+            else:
+                # Native SNN: gate controller not wired into forward pass.
+                # Report projected hardware savings from the profile instead.
+                savings = self._theoretical_savings()
 
             run_results.append({"fidelity": fidelity, "savings": savings})
             print(f"    Fidelity: {fidelity:.2f}%  Savings: {savings:.2f}%")
@@ -402,8 +454,11 @@ class ReportGenerator:
 
                 fidelity = (pol_preds == base_preds).float().mean().item() * 100
                 bypassed = self.gate_controller.bypassed_kv_computations
-                total = self.gate_controller.total_kv_computations
-                savings = (bypassed / total * 100) if total > 0 else 0.0
+                total    = self.gate_controller.total_kv_computations
+                if total > 0:
+                    savings = bypassed / total * 100
+                else:
+                    savings = self._theoretical_savings(pol_val)
                 fids.append(fidelity)
                 savs.append(savings)
 
@@ -595,8 +650,12 @@ class ReportGenerator:
         w(f"| Architecture | MaxFormer 10-384-T4 |")
         total_heads = self.num_blocks * self.num_heads
         w(f"| Blocks x Heads | {self.num_blocks} x {self.num_heads} = {total_heads} total heads |")
+        theoretical = self._theoretical_savings()
+        savings_label = "Projected Hardware K/V Savings" if theoretical > 0 and mean_sav == theoretical else "Mean Compute Savings"
         w(f"| Mean Baseline Fidelity | **{mean_fid:.2f}% +/- {std_fid:.2f}%** |")
-        w(f"| Mean Compute Savings | **{mean_sav:.2f}% +/- {std_sav:.2f}%** |")
+        w(f"| {savings_label} | **{mean_sav:.2f}% +/- {std_sav:.2f}%** |")
+        if theoretical > 0 and mean_sav > 0:
+            w(f"| Theoretical Max Savings | {theoretical:.1f}% (if all profile policies applied) |")
         w("")
 
         # Policy Distribution
