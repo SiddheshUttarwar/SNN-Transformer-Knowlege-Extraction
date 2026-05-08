@@ -67,11 +67,12 @@ class SpikingGatedAttention(nn.Module):
         self.gate_controller.reset_state()
         self.timestep = 0
 
-    def forward(self, x: torch.Tensor) -> torch.Tensor:
+    def forward(self, x: torch.Tensor, **kwargs) -> torch.Tensor:
         """Forward pass for a single timestep.
 
         Args:
             x: Input tensor of shape ``(B, N, D)``.
+            **kwargs: Extra arguments like attn_mask (ignored for now).
 
         Returns:
             Output tensor of shape ``(B, N, D)``.
